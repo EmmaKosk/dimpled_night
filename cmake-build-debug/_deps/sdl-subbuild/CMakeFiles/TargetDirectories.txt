@@ -1,0 +1,3 @@
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl-subbuild/CMakeFiles/sdl-populate.dir
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl-subbuild/CMakeFiles/rebuild_cache.dir

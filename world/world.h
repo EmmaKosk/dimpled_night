@@ -1,0 +1,22 @@
+#pragma once
+
+#include <SDL3/SDL.h>
+#include "player.h"
+#include <memory>
+#include "vec.h"
+#include "tilemap.h"
+
+class World {
+public:
+    World(int width, int height);
+
+    void add_platform(float x, float y, float width, float height);
+    bool collides(const Vec<float>& position) const;
+    Player* create_player();
+    void update(float dt);
+
+    Tilemap tilemap;
+
+private:
+    std::unique_ptr<Player> player;
+};

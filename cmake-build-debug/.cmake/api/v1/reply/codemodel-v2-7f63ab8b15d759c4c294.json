@@ -1,0 +1,309 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"build" : "_deps/sdl-build",
+					"jsonFile" : "directory-_deps.sdl-build-Debug-946d016ba4f78f4d04bd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "cmake-build-debug/_deps/sdl-src",
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3
+					]
+				},
+				{
+					"build" : "_deps/sdl_mixer-build",
+					"jsonFile" : "directory-_deps.sdl_mixer-build-Debug-3b9121aed26462646117.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "cmake-build-debug/_deps/sdl_mixer-src",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "utility",
+					"jsonFile" : "directory-utility-Debug-e5039219238ef1187972.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "utility",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "graphics",
+					"jsonFile" : "directory-graphics-Debug-e53be08289d1beb6d2a1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "graphics",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "world",
+					"jsonFile" : "directory-world-Debug-85fb25f28373a2c95ea6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "world",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "game_objects",
+					"jsonFile" : "directory-game_objects-Debug-3f9bbb4e4bd3b4ba2619.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "game_objects",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "game",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "SDL3",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						2,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "SDL3_mixer",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "utility",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "graphics",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "world",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "game_objects",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL3-shared::@fc7b397d5a055aba6d5e",
+					"jsonFile" : "target-SDL3-shared-Debug-f5bdc7cb734644781cfd.json",
+					"name" : "SDL3-shared",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "SDL3_mixer-shared::@369d0a4127e2455367a9",
+					"jsonFile" : "target-SDL3_mixer-shared-Debug-d866153733c46d3b578b.json",
+					"name" : "SDL3_mixer-shared",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL3_test::@fc7b397d5a055aba6d5e",
+					"jsonFile" : "target-SDL3_test-Debug-873783873b31dec0deed.json",
+					"name" : "SDL3_test",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL_uclibc::@fc7b397d5a055aba6d5e",
+					"jsonFile" : "target-SDL_uclibc-Debug-3b86831722bc6e0e9b1a.json",
+					"name" : "SDL_uclibc",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game-Debug-460f06a234a7e26fa7f3.json",
+					"name" : "game",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_lib-Debug-390ed57ba5ca163eece2.json",
+					"name" : "game_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "game_objects::@736d373c8f9527dc5245",
+					"jsonFile" : "target-game_objects-Debug-e104f8867b7c39909400.json",
+					"name" : "game_objects",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "graphics::@708b9b26fb9b6631b242",
+					"jsonFile" : "target-graphics-Debug-47711ed1dce4f9024119.json",
+					"name" : "graphics",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "utility::@23b027168f11ea0d609c",
+					"jsonFile" : "target-utility-Debug-dc64b1883b4d5796a9d4.json",
+					"name" : "utility",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "world::@420baf620e3fcd9b3715",
+					"jsonFile" : "target-world-Debug-fdfc42ce62b3c024cb6e.json",
+					"name" : "world",
+					"projectIndex" : 5
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug",
+		"source" : "C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

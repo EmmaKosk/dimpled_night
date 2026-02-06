@@ -1,0 +1,14 @@
+# Target labels
+ sdl_mixer-populate
+# Source files and their labels
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl_mixer-subbuild/CMakeFiles/sdl_mixer-populate
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl_mixer-subbuild/CMakeFiles/sdl_mixer-populate.rule
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl_mixer-subbuild/CMakeFiles/sdl_mixer-populate-complete.rule
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-build.rule
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-configure.rule
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-download.rule
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-install.rule
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-mkdir.rule
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-patch.rule
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-test.rule
+C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl_mixer-subbuild/sdl_mixer-populate-prefix/src/sdl_mixer-populate-stamp/sdl_mixer-populate-update.rule
