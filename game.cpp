@@ -14,11 +14,12 @@ Game::Game(std::string title, int width, int height)
     world.add_platform(13,4,6,1);
 
     player = world.create_player();
+    camera.set_location(player->position);
 }
 
 void Game::input() {
     player->handle_input();
-
+    camera.handle_input();
     //more to be added
 }
 
@@ -28,7 +29,10 @@ void Game::update() {
     prev_counter = now;
     while(lag >= dt) {
         world.update(dt);
-        camera.update(player->position, dt);
+        //put camera ahead of the player
+        float L = length(player->velocity);
+        Vec displacement = 8.0f * player->velocity / (1.0f + L);
+        camera.update(player->position + displacement, dt);
         lag -= dt;
     }
 

@@ -30,7 +30,7 @@ Vec<float> Camera::world_to_screen(const Vec<float> &world_posistion) const {
 
 void Camera::update(const Vec<float> &new_location, float dt) {
     goal = new_location;
-    acceleration = (goal - location);
+    acceleration = (goal - location) * 10.0f;
 
     velocity += 0.5f * acceleration *dt;
     location += velocity * dt;
@@ -45,7 +45,7 @@ void Camera::render(const Vec<float> &position, const Color &color, bool filled)
     Vec<float> pixel = world_to_screen(position);
     pixel -= Vec{tilesize/2, tilesize/2}; //center on tile
     SDL_FRect rect{pixel.x, pixel.y, tilesize, tilesize};
-    graphics.draw(rect, color);
+    graphics.draw(rect, color, filled);
 }
 
 void Camera::render(const Tilemap &tilemap) const {
@@ -66,9 +66,26 @@ void Camera::render(const Tilemap &tilemap) const {
             else {
                 render(position, {0, 127, 127, 255});
             }
+            if(grid_toggle.on == true) {
+                render(position, {0,0,0,255}, false);
+            }
         }
     }
 }
+
+void Camera::set_location(const Vec<float> &new_location) {
+    location = new_location;
+    calculate_visable_tiles();
+}
+
+void Camera::handle_input() {
+    const bool *key_states = SDL_GetKeyboardState(NULL);
+
+    if(key_states[SDL_SCANCODE_G]){
+        grid_toggle.flip();
+    }
+}
+
 
 
 

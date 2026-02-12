@@ -28,8 +28,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(sdl-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/libsdl-org/SDL.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "release-3.4.0" "GIT_SHALLOW" "TRUE" "GIT_PROGRESS" "TRUE"
-                    SOURCE_DIR          "C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl-src"
-                    BINARY_DIR          "C:/Users/emmak/Documents/wlc_folder/csc_homework/game_dev/class-game/cmake-build-debug/_deps/sdl-build"
+                    SOURCE_DIR          "C:/Users/emmak/OneDrive/Documents/GitHub/dimpled_night/cmake-build-debug/_deps/sdl-src"
+                    BINARY_DIR          "C:/Users/emmak/OneDrive/Documents/GitHub/dimpled_night/cmake-build-debug/_deps/sdl-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

@@ -18,6 +18,7 @@ void World::add_platform(float x, float y, float width, float height) {
 }
 
 bool World::collides(const Vec<float> &position) const {
+    //TODO
     int x = std::floor(position.x);
     int y = std::floor(position.y);
     return tilemap(x,y) == Tile::Platform;
