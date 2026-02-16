@@ -1,10 +1,10 @@
 #pragma once
 
-#include <SDL3/SDL.h>
-#include "player.h"
 #include <memory>
-#include "vec.h"
 #include "tilemap.h"
+#include "vec.h"
+
+class GameObject;
 
 class World {
 public:
@@ -12,11 +12,12 @@ public:
 
     void add_platform(float x, float y, float width, float height);
     bool collides(const Vec<float>& position) const;
-    Player* create_player();
+    GameObject* create_player();
+    void move_to(Vec<float>& position, const Vec<int>& size, Vec<float>& velocity);
     void update(float dt);
 
     Tilemap tilemap;
 
 private:
-    std::unique_ptr<Player> player;
+    std::unique_ptr<GameObject> player;
 };

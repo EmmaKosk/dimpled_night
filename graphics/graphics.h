@@ -14,11 +14,11 @@ public:
     void clear();
     void draw(const SDL_FRect& rect, const Color& color, bool filled=true);
     void update();
+
     const int width, height;
 
 private:
     std::string title;
-
     SDL_Window* window;
     SDL_Renderer* renderer;
 };

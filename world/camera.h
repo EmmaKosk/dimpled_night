@@ -1,8 +1,9 @@
 #pragma once
 
 #include "tilemap.h"
-#include <vec.h>
+#include "vec.h"
 #include "toggle.h"
+#include "physics.h"
 
 class Graphics;
 class Color;
@@ -13,21 +14,19 @@ public:
 
     void handle_input();
     void update(const Vec<float>& new_location, float dt);
-    Vec<float> world_to_screen(const Vec<float>& world_posistion) const;
+    Vec<float> world_to_screen(const Vec<float>& world_position) const;
+    void set_location(const Vec<float>& new_location);
 
     void render(const Vec<float>& position, const Color& color, bool filled=true) const;
     void render(const Tilemap& tilemap) const;
 
-    void set_location(const Vec<float>& new_location);
-
-
 private:
     Graphics& graphics;
     float tilesize;
-    Vec<float> location;
     Toggle grid_toggle;
 
-    void calculate_visable_tiles();
-    Vec<int> visable_min, visable_max;
-    Vec<float> goal, velocity, acceleration;
+    void calcuate_visible_tiles();
+    Vec<int> visible_min, visible_max;
+    Vec<float> goal;
+    Physics physics;
 };

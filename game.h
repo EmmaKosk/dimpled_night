@@ -1,24 +1,25 @@
 #pragma once
-#include "player.h"
 #include "world.h"
 #include "camera.h"
+#include "game_object.h"
+#include "graphics.h"
 
-class Game{
+class Game {
 public:
     Game(std::string title, int width, int height);
     void input();
     void update();
     void render();
+
 private:
-    Player* player;
-    World world;
     Graphics graphics;
+    GameObject* player;
+    World world;
+    Camera camera;
 
     // timing
-    //how much time between frames
     float dt;
     Uint64 performance_frequency;
     Uint64 prev_counter;
     float lag;
-    Camera camera;
 };
