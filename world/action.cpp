@@ -3,5 +3,5 @@
 #include "world.h"
 
 void Jump::perform(World &world, GameObject &obj) {
-    /*obj.physicis.veloity.y = obj.physics.jump_velocity;*/
+    obj.physics.velocity.y = obj.physics.jump_velocity;
 }

@@ -10,6 +10,7 @@ enum class ActionType {
     MoveRight,
 };
 class Action {
+public:
     virtual ~Action() = default;
     virtual void perform(World& world, GameObject& obj) = 0;
 
