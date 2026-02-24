@@ -18,15 +18,13 @@ void GameObject::input(World &world) {
     const bool *key_states = SDL_GetKeyboardState(NULL);
     ActionType actiontype = ActionType::None;
 
-    /*if (key_states[SDL_SCANCODE_A]) {
-        //velocity.x += -8;
-        physics.acceleration.x += -physics.walk_acceleration;
+    if (key_states[SDL_SCANCODE_A]) {
+        actiontype = ActionType::MoveLeft;
     }
-    if (key_states[SDL_SCANCODE_D]) {
-        //velocity.x += 8;
-        physics.acceleration.x += physics.walk_acceleration;
-    }*/
-    if (key_states[SDL_SCANCODE_SPACE]) {
+    else if (key_states[SDL_SCANCODE_D]) {
+        actiontype = ActionType::MoveRight;
+    }
+    else if (key_states[SDL_SCANCODE_SPACE]) {
         actiontype = ActionType::Jump;
     }
     Action* action = fsm->current_state->input(world, *this, actiontype);
@@ -36,7 +34,7 @@ void GameObject::input(World &world) {
 }
 
 void GameObject::update(World &world, double dt) {
-
+    fsm->current_state->update(world, *this, dt);
 }
 
 std::pair<Vec<float>, Color> GameObject::get_sprite() const {

@@ -7,8 +7,8 @@ class Action;
 enum class ActionType;
 class State;
 
-enum class StateType{Standing, InAir};
-enum class Transition{Jump, Stop};
+enum class StateType{Standing, InAir, Running};
+enum class Transition{Jump, Stop, Move};
 
 using Transitions = std::map<std::pair<StateType, Transition>, StateType>;
 using States = std::map<StateType, State*>;
@@ -35,6 +35,6 @@ public:
     virtual void on_enter(World&, GameObject&){}
     virtual void on_exit(World&, GameObject&){}
 
-    virtual Action* input(World&, GameObject&, ActionType) {nullptr;}
+    virtual Action* input(World&, GameObject&, ActionType) {return nullptr;}
     virtual void update(World&, GameObject&, [[maybe_unused]]double dt){}
 };

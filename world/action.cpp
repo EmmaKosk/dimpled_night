@@ -5,3 +5,7 @@
 void Jump::perform(World &world, GameObject &obj) {
     obj.physics.velocity.y = obj.physics.jump_velocity;
 }
+
+void MoveRight::perform(World &, GameObject &obj) {
+    obj.physics.acceleration.x = obj.physics.walk_acceleration;
+}

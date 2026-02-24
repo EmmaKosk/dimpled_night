@@ -11,7 +11,7 @@ FSM::~FSM() {
 
 void FSM::transition(Transition t, World &world, GameObject &obj) {
     auto itr = transitions.find({current_state_type, t});
-    if(itr != transitions.end) {
+    if(itr != transitions.end()) {
         current_state->on_exit(world, obj);
 
         current_state_type = itr->second;

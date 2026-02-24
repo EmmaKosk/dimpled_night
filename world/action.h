@@ -19,3 +19,7 @@ public:
 class Jump : public Action {
     void perform(World& world, GameObject& obj);
 };
+
+class MoveRight : public Action {
+    void perform(World&, GameObject &obj) override;
+};
