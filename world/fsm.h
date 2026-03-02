@@ -7,8 +7,8 @@ class Action;
 enum class ActionType;
 class State;
 
-enum class StateType{Standing, InAir, Running};
-enum class Transition{Jump, Stop, Move};
+enum class StateType {Standing, InAir, Running};
+enum class Transition {Jump, Stop, Move};
 
 using Transitions = std::map<std::pair<StateType, Transition>, StateType>;
 using States = std::map<StateType, State*>;
@@ -20,8 +20,7 @@ public:
 
     void transition(Transition t, World& world, GameObject& obj);
 
-    //fsm data
-
+    // FSM data
     Transitions transitions;
     States states;
     StateType current_state_type;

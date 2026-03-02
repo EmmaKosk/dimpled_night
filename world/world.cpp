@@ -7,6 +7,7 @@
 #include "physics.h"
 #include "fsm.h"
 #include "states.h"
+#include "keyboard_input.h"
 
 World::World(int width, int height)
     : tilemap{width, height} {}
@@ -29,7 +30,7 @@ bool World::collides(const Vec<float>& position) const {
 GameObject* World::create_player() {
     // Create FSM
     Transitions transitions = {
-    {{StateType::Standing, Transition::Jump}, StateType::InAir},
+        {{StateType::Standing, Transition::Jump}, StateType::InAir},
         {{StateType::InAir, Transition::Stop}, StateType::Standing},
         {{StateType::Standing, Transition::Move}, StateType::Running},
         {{StateType::Running, Transition::Stop}, StateType::Standing},
@@ -41,7 +42,11 @@ GameObject* World::create_player() {
         {StateType::Running, new Running()}
     };
     FSM* fsm = new FSM{transitions, states, StateType::Standing};
-    player = std::make_unique<GameObject>(Vec<float>{10, 5}, Vec<int>{1,1}, *this, fsm, Color{255, 0, 0, 255});
+
+    // player input
+    KeyboardInput* input = new KeyboardInput();
+
+    player = std::make_unique<GameObject>(Vec<float>{10, 5}, Vec<int>{1,1}, *this, fsm, input, Color{255, 0, 0, 255});
     return player.get();
 }
 
